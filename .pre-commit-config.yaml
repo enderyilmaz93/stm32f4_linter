@@ -1,3 +1,4 @@
+---
 # To use:
 #
 #     pre-commit run -a
@@ -14,24 +15,24 @@
 
 
 exclude: >
-    (?x)(
-        LICENSE$|
-        \.cproject$|
-        \.mxproject$|
-        \.project$|
-        \.md$|
-        \.ld$|
-        \.ioc$|
-        \.txt$|
-        \.o$|
-        \.s$|
-        ^Drivers|
-        ^Core/Startup
-    )
- 
+  (?x)(
+      LICENSE$|
+      \.cproject$|
+      \.mxproject$|
+      \.project$|
+      \.md$|
+      \.ld$|
+      \.ioc$|
+      \.txt$|
+      \.o$|
+      \.s$|
+      ^Drivers|
+      ^Core/Startup
+  )
+
 # (optional: default false) set to true to have pre-commit stop running hooks after the first failure. new in 1.1.0.
 fail_fast: false
- 
+
  # (optional: default '0') require a minimum version of pre-commit. new in 1.15.0.
 minimum_pre_commit_version: 2.20.0
 
@@ -51,16 +52,30 @@ repos:
         files: \.(c|h)$
      # exclude: ^Drivers | ^Core/Startup
         args:
-            - --style=WebKit        
-            - -i
+          - --style=WebKit
+          - -i
       - id: cppcheck
         name: cppcheck
         description: Static analysis tool for C/C++ code
         files: \.(c|h)$
-        args: 
+        args:
         # Must be create a folder named analyz before pre build
-            - --force
-            - -DHSE_VALUE
-            - -DHSI_VALUE
-            - --enable=all
-            - --std=c11                
+          - --force
+          - -DHSE_VALUE
+          - -DHSI_VALUE
+          - --enable=all
+          - --std=c11
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      # YAML
+  - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+    rev: 0.1.0
+    hooks:
+      - id: yamlfmt
+        args: [--mapping, '2', --sequence, '4', --offset, '2', --width, '150']
+        types: [yaml]
