@@ -62,4 +62,5 @@ repos:
             - --force
             - -DHSE_VALUE
             - -DHSI_VALUE
+            - --enable=all
             - --std=c11                
