@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<analyzerinfo checksum="2165969354">
-  <FileInfo check="CheckUnusedFunctions">
-    <functiondecl functionName="HAL_MspInit" lineNumber="63"/>
-    <functioncall functionName="__HAL_RCC_PWR_CLK_ENABLE"/>
-    <functioncall functionName="__HAL_RCC_SYSCFG_CLK_ENABLE"/>
-    <functioncall functionName="void"/>
-  </FileInfo>
-</analyzerinfo>
