@@ -62,4 +62,6 @@ repos:
             - --force
             - -DHSE_VALUE
             - -DHSI_VALUE
+         # Open the following parameter for the real project
+            - --cppcheck-build-dir=log\cppcheck
             - --std=c11                
