@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4271446717">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="NMI_Handler" lineNumber="69"/>
+    <functiondecl functionName="HardFault_Handler" lineNumber="83"/>
+    <functiondecl functionName="MemManage_Handler" lineNumber="97"/>
+    <functiondecl functionName="BusFault_Handler" lineNumber="111"/>
+    <functiondecl functionName="UsageFault_Handler" lineNumber="125"/>
+    <functiondecl functionName="SVC_Handler" lineNumber="139"/>
+    <functiondecl functionName="DebugMon_Handler" lineNumber="152"/>
+    <functiondecl functionName="PendSV_Handler" lineNumber="165"/>
+    <functiondecl functionName="SysTick_Handler" lineNumber="178"/>
+    <functioncall functionName="HAL_IncTick"/>
+    <functioncall functionName="void"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

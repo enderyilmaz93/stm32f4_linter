@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4245844814">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="62"/>
+    <functiondecl functionName="SystemClock_Config" lineNumber="103"/>
+    <functiondecl functionName="Error_Handler" lineNumber="146"/>
+    <functiondecl functionName="main" lineNumber="62"/>
+    <functiondecl functionName="SystemClock_Config" lineNumber="103"/>
+    <functiondecl functionName="Error_Handler" lineNumber="146"/>
+    <functiondecl functionName="assert_failed" lineNumber="164"/>
+    <functioncall functionName="Error_Handler"/>
+    <functioncall functionName="FLASH_LATENCY_0"/>
+    <functioncall functionName="HAL_Init"/>
+    <functioncall functionName="HAL_RCC_ClockConfig"/>
+    <functioncall functionName="HAL_RCC_OscConfig"/>
+    <functioncall functionName="PWR_REGULATOR_VOLTAGE_SCALE1"/>
+    <functioncall functionName="RCC_CLOCKTYPE_PCLK2"/>
+    <functioncall functionName="RCC_ClkInitStruct"/>
+    <functioncall functionName="RCC_HCLK_DIV1"/>
+    <functioncall functionName="RCC_HSICALIBRATION_DEFAULT"/>
+    <functioncall functionName="RCC_HSI_ON"/>
+    <functioncall functionName="RCC_OSCILLATORTYPE_HSI"/>
+    <functioncall functionName="RCC_OscInitStruct"/>
+    <functioncall functionName="RCC_PLL_NONE"/>
+    <functioncall functionName="RCC_SYSCLKSOURCE_HSI"/>
+    <functioncall functionName="RCC_SYSCLK_DIV1"/>
+    <functioncall functionName="SystemClock_Config"/>
+    <functioncall functionName="__HAL_PWR_VOLTAGESCALING_CONFIG"/>
+    <functioncall functionName="__HAL_RCC_PWR_CLK_ENABLE"/>
+    <functioncall functionName="__disable_irq"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="void"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

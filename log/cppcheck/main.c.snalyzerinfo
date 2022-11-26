@@ -1,0 +1,4 @@
+main call:[HAL_Init,SystemClock_Config]
+SystemClock_Config call:[Error_Handler,HAL_RCC_ClockConfig,HAL_RCC_OscConfig,__HAL_PWR_VOLTAGESCALING_CONFIG,__HAL_RCC_PWR_CLK_ENABLE] noreturn:[Error_Handler]
+Error_Handler call:[__disable_irq]
+assert_failed

@@ -1,0 +1,2 @@
+main.a1::Core/Src/main.c
+main.a2:HSE_VALUE=1;HSI_VALUE=1:Core/Src/main.c

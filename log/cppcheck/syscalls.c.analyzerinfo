@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2055865269">
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="Core/Src/syscalls.c:88:5" my-argnr="2" my-argname="st" file="Core/Src/syscalls.c" line="90" col="5" value="0"/>
+    <unsafe-usage my-id="Core/Src/syscalls.c:127:5" my-argnr="2" my-argname="st" file="Core/Src/syscalls.c" line="129" col="5" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="initialise_monitor_handles" lineNumber="41"/>
+    <functiondecl functionName="_getpid" lineNumber="45"/>
+    <functiondecl functionName="_kill" lineNumber="50"/>
+    <functiondecl functionName="_exit" lineNumber="56"/>
+    <functiondecl functionName="_read" lineNumber="62"/>
+    <functiondecl functionName="_write" lineNumber="73"/>
+    <functiondecl functionName="_close" lineNumber="83"/>
+    <functiondecl functionName="_fstat" lineNumber="88"/>
+    <functiondecl functionName="_isatty" lineNumber="94"/>
+    <functiondecl functionName="_lseek" lineNumber="99"/>
+    <functiondecl functionName="_open" lineNumber="104"/>
+    <functiondecl functionName="_wait" lineNumber="110"/>
+    <functiondecl functionName="_unlink" lineNumber="116"/>
+    <functiondecl functionName="_times" lineNumber="122"/>
+    <functiondecl functionName="_stat" lineNumber="127"/>
+    <functiondecl functionName="_link" lineNumber="133"/>
+    <functiondecl functionName="_fork" lineNumber="139"/>
+    <functiondecl functionName="_execve" lineNumber="145"/>
+    <functioncall functionName="EAGAIN"/>
+    <functioncall functionName="ECHILD"/>
+    <functioncall functionName="EINVAL"/>
+    <functioncall functionName="EMLINK"/>
+    <functioncall functionName="ENOENT"/>
+    <functioncall functionName="ENOMEM"/>
+    <functioncall functionName="S_IFCHR"/>
+    <functioncall functionName="__env"/>
+    <functioncall functionName="__io_getchar"/>
+    <functioncall functionName="__io_putchar"/>
+    <functioncall functionName="_kill"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="status"/>
+    <functioncall functionName="void"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

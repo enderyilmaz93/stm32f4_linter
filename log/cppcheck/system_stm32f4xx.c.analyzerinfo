@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1034264807">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="SystemInit" lineNumber="166"/>
+    <functiondecl functionName="SystemCoreClockUpdate" lineNumber="219"/>
+    <functiondecl functionName="SystemInit" lineNumber="166"/>
+    <functiondecl functionName="SystemCoreClockUpdate" lineNumber="219"/>
+    <functiondecl functionName="SystemInit_ExtMemCtl" lineNumber="274"/>
+    <functiondecl functionName="SystemInit" lineNumber="166"/>
+    <functiondecl functionName="SystemCoreClockUpdate" lineNumber="219"/>
+    <functiondecl functionName="SystemInit" lineNumber="166"/>
+    <functiondecl functionName="SystemCoreClockUpdate" lineNumber="219"/>
+    <functiondecl functionName="SystemInit" lineNumber="166"/>
+    <functiondecl functionName="SystemCoreClockUpdate" lineNumber="219"/>
+    <functioncall functionName="AHB1ENR"/>
+    <functioncall functionName="AHB3ENR"/>
+    <functioncall functionName="RCC_AHB1ENR_GPIOCEN"/>
+    <functioncall functionName="RCC_AHB3ENR_FMCEN"/>
+    <functioncall functionName="READ_BIT"/>
+    <functioncall functionName="SDRTR"/>
+    <functioncall functionName="SystemInit_ExtMemCtl"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="pllm"/>
+    <functioncall functionName="pllp"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="tmp"/>
+    <functioncall functionName="void"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>
