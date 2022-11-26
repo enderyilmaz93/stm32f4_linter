@@ -1,0 +1,67 @@
+# To use:
+#
+#     pre-commit run -a
+#
+# Or:
+#
+#     pre-commit install  # (runs every time you commit in git)
+#
+# To update this file:
+#
+#     pre-commit autoupdate
+#
+# See https://github.com/pre-commit/pre-commit
+
+
+exclude: >
+    (?x)(
+        LICENSE$|
+        \.cproject$|
+        \.mxproject$|
+        \.project$|
+        \.md$|
+        \.ld$|
+        \.ioc$|
+        \.txt$|
+        \.o$|
+        \.s$|
+        ^Drivers|
+        ^Core/Startup
+    )
+ 
+# (optional: default false) set to true to have pre-commit stop running hooks after the first failure. new in 1.1.0.
+fail_fast: false
+ 
+ # (optional: default '0') require a minimum version of pre-commit. new in 1.15.0.
+minimum_pre_commit_version: 2.20.0
+
+#  list of repository mappings see: https://pre-commit.com/index.html#pre-commit-configyaml---repos
+repos:
+
+# This is a pre-commit hooks repo that integrates two C/C++ code formatters:
+#       clang-format, uncrustify,
+# and five C/C++ static code analyzers:
+#       clang-tidy, oclint, cppcheck, cpplint, include-what-you-use
+  - repo: https://github.com/pocc/pre-commit-hooks
+    rev: v1.3.5
+    hooks:
+      - id: clang-format
+        name: clang-format
+        description: Format files with ClangFormat
+        files: \.(c|h)$
+     # exclude: ^Drivers | ^Core/Startup
+        args:
+            - --style=WebKit        
+            - -i
+      - id: cppcheck
+        name: cppcheck
+        description: Static analysis tool for C/C++ code
+        files: \.(c|h)$
+        args: 
+        # Must be create a folder named analyz before pre build
+            - --force
+            - -DHSE_VALUE
+            - -DHSI_VALUE
+         # Open the following parameter for the real project
+            - --cppcheck-build-dir=log\cppcheck
+            - --std=c11                
